@@ -1,0 +1,21 @@
+function onCreate()
+    makeLuaSprite("thing", "osaker",400, 400)
+    setProperty("thing.alpha", 0.8)
+    addLuaSprite("thing", true)
+end
+
+function goodNoteHit(id, noteData, noteType, isSustainNote)
+    if noteData == 0 then
+        setProperty("thing.x", getProperty("thing.x") - 10)
+    elseif noteData == 1 then
+        setProperty("thing.y", getProperty("thing.y") + 10)
+    elseif noteData == 2 then
+        setProperty("thing.y", getProperty("thing.y") - 10)
+    elseif noteData == 3 then
+        setProperty("thing.x", getProperty("thing.x") + 10)
+    end
+end
+
+function onUpdate(e)
+    setProperty("boyfriend.angle", getProperty("boyfriend.angle") + 1)
+end
