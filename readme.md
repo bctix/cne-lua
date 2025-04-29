@@ -6,6 +6,10 @@ I just know that there are people wondering where this went, so im just releasin
 
 Don't ask me how to fix something or how you should implement this in your mod.
 
+## How to use
+1. Add a script inside your songs `scripts` folder with the extension `.cnelua`
+2. profit
+
 ## Functions that do work:
 
 - `debugPrint(string)`
